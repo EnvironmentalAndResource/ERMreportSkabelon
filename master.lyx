@@ -4,7 +4,7 @@
 \begin_header
 \textclass ermreport
 \begin_preamble
-\addbibresource{~/Git/ERMreportSkabelon/litteratur.bib}
+\addbibresource{litteratur.bib}
 %
 %% If this is not working try this
 %% Remove the % nad palce a % in front of above
@@ -223,7 +223,8 @@ Forord
 \end_layout
 
 \begin_layout Standard
-Brug preface environmentet
+Brug preface environmentet.
+ Kapitæer inkuderes med Insert > File > Childe Document
 \end_layout
 
 \begin_layout Standard
@@ -245,55 +246,14 @@ filename "kapitel01.lyx"
 
 \end_layout
 
-\begin_layout Chapter
-Indledning
-\end_layout
-
 \begin_layout Standard
-Her skrives og skrives 
-\begin_inset CommandInset citation
-LatexCommand citep
-key "Bringhurst2004,Chicago2010,Langston2004,Wilson2009,Wulff2006"
+\begin_inset CommandInset include
+LatexCommand include
+filename "kapitel02.lyx"
 
 \end_inset
 
 
-\end_layout
-
-\begin_layout Section
-Litteratur liste
-\end_layout
-
-\begin_layout Standard
-For at få litteratur skal tre ting gøres
-\begin_inset CommandInset citation
-LatexCommand citet
-key "Bringhurst2004"
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Enumerate
-Der skal være en linje i preamplen der henviser til *.bib filen.
- Gå til Dokumnet > Seting > Latex preamble her skal være en linje med 
-\family typewriter
-
-\backslash
-addbibresource{~/Git/ERMreport/lyx/erm.bib} 
-\end_layout
-
-\begin_layout Enumerate
-Lyx skal kunne finde *bib filen det gøres ved meuen Insert > List / TOC
- > BibTex Bibliografy ....
- Tryk på aadd og henvis til samme *.bib file.
- Når det er gjort markeres BibTeX Generated Bibliograpy og gøres gul ved
- at trykke på Insert Lyx Note
-\end_layout
-
-\begin_layout Enumerate
-Der hvor bibliografien ønskes skal der være indsættes fra meneu Bibliography
 \end_layout
 
 \begin_layout Standard
@@ -329,13 +289,30 @@ Hod den tom
 
 \end_layout
 
-\begin_layout Chapter
-\start_of_appendix
-Uddybende
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+appendix
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
-Her skrives 
+\begin_inset CommandInset include
+LatexCommand include
+filename "bilag_1.lyx"
+
+\end_inset
+
+
 \end_layout
 
 \end_body

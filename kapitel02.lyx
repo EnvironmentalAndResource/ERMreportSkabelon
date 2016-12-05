@@ -73,14 +73,7 @@
 \begin_body
 
 \begin_layout Chapter
-Indledning
-\begin_inset CommandInset label
-LatexCommand label
-name "chap:Indledning"
-
-\end_inset
-
-
+Teori
 \end_layout
 
 \begin_layout Standard
@@ -91,70 +84,47 @@ key "Bringhurst2004,Chicago2010,Langston2004,Wilson2009,Wulff2006"
 
 \end_inset
 
-.
- Her skrives og skrives
+
+\end_layout
+
+\begin_layout Standard
+
 \end_layout
 
 \begin_layout Section
-En sektion
+Litteratur liste
 \end_layout
 
 \begin_layout Standard
-Her skrives og skrives.
- Her skrives og skrives, se næbdyr 
-\begin_inset CommandInset ref
-LatexCommand formatted
-reference "fig:Næbdyr"
-
-\end_inset
-
-.
- Her skrives og skrives
-\end_layout
-
-\begin_layout Standard
-\begin_inset Float figure
-wide false
-sideways false
-status open
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset Graphics
-	filename fig/platypus.pdf
-	width 8cm
+For at få litteratur skal tre ting gøres
+\begin_inset CommandInset citation
+LatexCommand citet
+key "Bringhurst2004"
 
 \end_inset
 
 
 \end_layout
 
-\begin_layout Plain Layout
-\begin_inset Caption Standard
+\begin_layout Enumerate
+Der skal være en linje i preamplen der henviser til *.bib filen.
+ Gå til Dokumnet > Seting > Latex preamble her skal være en linje med 
+\family typewriter
 
-\begin_layout Plain Layout
-Her er et næbdyr som eksempel på en figur.
- 
+\backslash
+addbibresource{erm.bib} 
 \end_layout
 
-\end_inset
-
-
-\begin_inset CommandInset label
-LatexCommand label
-name "fig:Næbdyr"
-
-\end_inset
-
-
+\begin_layout Enumerate
+Lyx skal kunne finde *bib filen det gøres ved meuen Insert > List / TOC
+ > BibTex Bibliografy ....
+ Tryk på aadd og henvis til samme *.bib file.
+ Når det er gjort markeres BibTeX Generated Bibliograpy og gøres gul ved
+ at trykke på Insert Lyx Note
 \end_layout
 
-\end_inset
-
-
+\begin_layout Enumerate
+Der hvor bibliografien ønskes skal der være indsættes fra meneu Bibliography
 \end_layout
 
 \begin_layout Subsection
